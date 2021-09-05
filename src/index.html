@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="scss/main.scss">
 </head>
 
-<body class="section-spacing">
+<body class="spacing--xl">
   <header class="header">
     <div class="header__top">
       <h3 class="dreamshare">Dreamshare</h3>
@@ -35,7 +35,7 @@
   </header>
 
   <main>
-    <div class="container">
+    <div class="container spacing--xl">
       <section class="how">
         <h3 class="section-header">How it works?</h3>
         <div class="steps">
@@ -90,7 +90,7 @@
         </div>
       </section>
 
-      <section class="partners-section">
+      <section class="spacing--md">
         <h3 class="section-header">Meet a partner for your best</h3>
         <div class="partners">
           <figure class="partner">
@@ -107,8 +107,46 @@
           </figure>
         </div>
         <div class="meet-partner">
-          <button class="button button--secondary">See other partners</button>
+          <button type="button" class="button button--secondary">See other partners</button>
         </div>
+      </section>
+
+      <section>
+        <h3 class="section-header">Discover holiday activity</h3>
+        <div class="activities">
+          <div class="activity activity--1 activity--sports">
+            <div class="activity__name">Sports and Activities</div>
+          </div>
+          <div class="activity activity--1 activity--wellness">
+            <div class="activity__name">Wellness and Health</div>
+          </div>
+          <div class="activity activity--1 activity--extreme">
+            <div class="activity__name">Extreme Sports and Expeditions</div>
+          </div>
+          <div class="activity activity--1 activity--games">
+            <div class="activity__name">Games</div>
+          </div>
+          <div class="activity activity--2 activity--culture">
+            <div class="activity__name">Culture and Education</div>
+          </div>
+          <div class="activity activity--2 activity--enjoyment">
+            <div class="activity__name">Enjoyment and Relaxation</div>
+          </div>
+          <div class="activity activity--1 activity--traveling">
+            <div class="activity__name">Traveling</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="interests">
+        <h3 class="section-header">Create your holiday activity</h3>
+        <form onsubmit="event.preventDefault();" class="interests__form">
+          <p>Hi! What are your holiday interests?</p>
+          <div class="interests__form-group">
+            <input class="interests__form-input" type="text" placeholder="Enter your interests">
+            <button type="submit" class="button button--primary">Search partners</button>
+          </div>
+        </form>
       </section>
     </div>
   </main>

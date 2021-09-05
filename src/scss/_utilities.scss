@@ -3,20 +3,22 @@
     margin-top: 1.75rem;
   }
   &--md > * + * {
-    margin-top: 3rem;
+    margin-top: 3.5rem;
   }
-}
-
-.section-spacing > * + * {
-  margin-top: 10rem;
+  &--lg > * + * {
+    margin-top: 7rem;
+  }
+  &--xl > * + * {
+    margin-top: 10rem;
+  }
 }
 
 .container {
   margin: 0 auto;
-  max-width: 75vw;
+  max-width: 70vw;
 
   // 1000px
   @media screen and (max-width: 62.5em) {
-    max-width: 95vw;
+    max-width: 90vw;
   }
 }
