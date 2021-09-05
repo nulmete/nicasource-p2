@@ -1,3 +1,22 @@
-.spacing > * + * {
-  margin-top: 3rem;
+.spacing {
+  &--sm > * + * {
+    margin-top: 1.75rem;
+  }
+  &--md > * + * {
+    margin-top: 3rem;
+  }
+}
+
+.section-spacing > * + * {
+  margin-top: 10rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 75vw;
+
+  // 1000px
+  @media screen and (max-width: 62.5em) {
+    max-width: 95vw;
+  }
 }

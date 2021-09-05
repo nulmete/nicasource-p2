@@ -1,0 +1,103 @@
+.how {
+  // testing purposes
+  margin: 10rem 0;
+
+  .steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    // 650px
+    @media screen and (max-width: 40.625em) {
+      display: block;
+    }
+  }
+
+  .step {
+    flex: 1 1 25%;
+  
+    border-radius: 4px;
+    overflow: hidden;
+    height: 55vh;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    // 650px
+    @media screen and (max-width: 40.625em) {
+      height: 35vh;
+    }
+
+    &--1 {
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.35)),
+        url("../assets/Step1.png");
+    }
+    &--2 {
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.35)),
+        url("../assets/Step2.png");
+    }
+    &--3 {
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.35)),
+        url("../assets/Step3.png");
+    }
+
+    &:not(:last-child) {
+      margin-right: 4rem;
+
+      // 1000px
+      @media screen and (max-width: 62.5em) {
+        margin-right: 1.5rem;
+      }
+
+      // 650px
+      @media screen and (max-width: 40.625em) {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    &__empty {
+      flex: 1;
+    }
+
+    &__content {
+      padding: 2rem;
+
+      // 1000px
+      @media screen and (max-width: 62.5em) {
+        padding: 1rem;
+      }
+    }
+
+    &__number {
+      display: inline-block;
+      background-color: var(--color-light-red);
+      border-radius: 100rem;
+      color: var(--color-white);
+      font-family: 'Montserrat';
+      font-size: 1rem;
+      font-weight: 400;
+      padding: 4px 16px;
+      text-transform: uppercase;
+    }
+
+    &__header {
+      color: var(--color-white);
+      font-family: 'Montserrat';
+      font-size: 2.4rem;
+      line-height: 1.1;
+    }
+
+    &__description {
+      color: var(--color-grey-light-2);
+      font-family: 'Roboto';
+      font-size: 1.4rem;
+      font-weight: 300;
+    }
+  }
+}

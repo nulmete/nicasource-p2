@@ -1,0 +1,27 @@
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+
+  .partner {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+    // 1000px
+    @media screen and (max-width: 62.5em) {
+      flex-basis: calc(50% - 1.5rem);
+    }
+
+    &__img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
+
+.meet-partner {
+  text-align: center;
+}

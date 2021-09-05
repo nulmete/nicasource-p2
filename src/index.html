@@ -8,17 +8,15 @@
   <title>NicaSource P2</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="scss/main.scss">
 </head>
 
-<body>
+<body class="section-spacing">
   <header class="header">
     <div class="header__top">
-      <div class="dreamshare">
-        <h3>Dreamshare</h3>
-      </div>
+      <h3 class="dreamshare">Dreamshare</h3>
       <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__item"><a href="#">Log in</a></li>
@@ -26,15 +24,94 @@
         </ul>
       </nav>
     </div>
-    <div class="header__mid spacing">
+    <div class="header__mid spacing--md">
       <h1 class="main-heading">
         <span class="main-heading__first">Share your</span>
         <span class="main-heading__last">holiday dream</span>
       </h1>
       <h2 class="main-subheading">And find the perfect partner to fulfill it</h2>
-      <button class="cta">Find your holiday partner</button>
+      <button class="button button--primary">Find your holiday partner</button>
     </div>
   </header>
+
+  <main>
+    <div class="container">
+      <section class="how">
+        <h3 class="section-header">How it works?</h3>
+        <div class="steps">
+          <div class="step step--1">
+            <div class="step__empty">&nbsp;</div>
+            <div class="step__content spacing--sm">
+              <div class="step__number">
+                Step 1
+              </div>
+              <h4 class="step__header">
+                Sed leo enim, condimentum
+              </h4>
+              <p class="step__description">
+                Quisque libero libero, dictum non turpis in,
+                luctus semper lorem. Donec rhoncus a leo
+                sit amet facilisis.
+              </p>
+            </div>
+          </div>
+          <div class="step step--2">
+            <div class="step__empty">&nbsp;</div>
+            <div class="step__content spacing--sm">
+              <div class="step__number">
+                Step 2
+              </div>
+              <h4 class="step__header">
+                Morbi velit risus
+              </h4>
+              <p class="step__description">
+                Nulla venetatis tempor dui in molestie.
+                Nulla quis dictum purus, sit amet
+                porttitor est.
+              </p>
+            </div>
+          </div>
+          <div class="step step--3">
+            <div class="step__empty">&nbsp;</div>
+            <div class="step__content spacing--sm">
+              <div class="step__number">
+                Step 3
+              </div>
+              <h4 class="step__header">
+                Sed leo enim, condimentum
+              </h4>
+              <p class="step__description">
+                Quisque libero libero, dictum non turpis in,
+                luctus semper lorem. Donec rhoncus a leo
+                sit amet facilisis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="partners-section">
+        <h3 class="section-header">Meet a partner for your best</h3>
+        <div class="partners">
+          <figure class="partner">
+            <img class="partner__img" src="assets/BradleyMusic.png" alt="Bradley">
+          </figure>
+          <figure class="partner">
+            <img class="partner__img" src="assets/MariePencil.png" alt="Bradley">
+          </figure>
+          <figure class="partner">
+            <img class="partner__img" src="assets/DianaCamera.png" alt="Bradley">
+          </figure>
+          <figure class="partner">
+            <img class="partner__img" src="assets/ChrisAirplane.png" alt="Bradley">
+          </figure>
+        </div>
+        <div class="meet-partner">
+          <button class="button button--secondary">See other partners</button>
+        </div>
+      </section>
+    </div>
+  </main>
 </body>
 
 </html>
