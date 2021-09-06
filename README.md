@@ -11,4 +11,4 @@ Open [http://localhost:1234](http://localhost:1234) to view it in the browser.
 ## Build
 
 - Run `npm run build` or `yarn build`.
-- Open `index.html` file located in `dist` folder.
+- Open `index.html` file located in `dist` folder with any browser (Chrome, Firefox, Safari, Edge).
