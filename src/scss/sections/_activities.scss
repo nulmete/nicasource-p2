@@ -1,0 +1,89 @@
+.activities {
+  .activities__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+  
+    // 1024px
+    @media screen and (max-width: $bp-large) {
+      gap: 1.5rem;
+    }
+  
+    // 650px
+    @media screen and (max-width: $bp-medium) {
+      display: block;
+    }
+  
+    .activity {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40vh;
+  
+      // 650px
+      @media screen and (max-width: $bp-medium) {
+        height: 26vh;
+  
+        &:not(:last-child) {
+          margin-bottom: 1.5rem;
+        }
+      }
+  
+      &--1 {
+        flex: 1 calc(33.33333% - 3rem);
+      }
+  
+      &--2 {
+        flex: 1 calc(66.66666% - 3rem);
+      }
+  
+      &--sports {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+          url("../assets/Sports.png");
+      }
+  
+      &--wellness {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+          url("../assets/Wellness.png");
+      }
+  
+      &--extreme {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+          url("../assets/Extreme.png");
+      }
+  
+      &--games {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+          url("../assets/Games.png");
+      }
+  
+      &--culture {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+          url("../assets/culture.png");
+      }
+  
+      &--enjoyment {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+          url("../assets/enjoymentRelaxation.png");
+      }
+  
+      &--traveling {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+          url("../assets/Traveling.png");
+      }
+  
+      &__name {
+        color: var(--color-white);
+        font-family: 'Montserrat';
+        font-size: 2.2rem;
+        font-weight: bold;
+        text-align: center;
+        max-width: 90%;
+      }
+    }
+  }
+}

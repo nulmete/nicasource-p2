@@ -15,6 +15,7 @@
 
 <body class="spacing--xl">
   <header class="header">
+    <!-- Header top section -->
     <div class="header__top">
       <h3 class="dreamshare">Dreamshare</h3>
       <nav class="navigation">
@@ -24,6 +25,8 @@
         </ul>
       </nav>
     </div>
+
+    <!-- Header mid section -->
     <div class="header__mid spacing--md">
       <h1 class="main-heading">
         <span class="main-heading__first">Share your</span>
@@ -36,9 +39,10 @@
 
   <main>
     <div class="container spacing--xl">
-      <section class="how">
+      <!-- Steps section -->
+      <section class="steps spacing--md">
         <h3 class="section-header">How it works?</h3>
-        <div class="steps">
+        <div class="steps__grid">
           <div class="step step--1">
             <div class="step__empty">&nbsp;</div>
             <div class="step__content spacing--sm">
@@ -90,20 +94,22 @@
         </div>
       </section>
 
-      <section class="spacing--md">
+      <!-- Meet a partner section -->
+      <section class="partners spacing--md">
         <h3 class="section-header">Meet a partner for your best</h3>
-        <div class="partners">
+        <div class="partners__grid">
           <figure class="partner">
-            <img class="partner__img" src="assets/BradleyMusic.png" alt="Bradley">
+            <img class="partner__img" src="assets/BradleyMusic.png" alt="Bradley Hunter">
           </figure>
           <figure class="partner">
-            <img class="partner__img" src="assets/MariePencil.png" alt="Bradley">
+            <img class="partner__img" src="assets/MariePencil.png" alt="Marie Bennett">
           </figure>
           <figure class="partner">
-            <img class="partner__img" src="assets/DianaCamera.png" alt="Bradley">
+            <img class="partner__img" src="assets/DianaCamera.png" alt="Diana Wells">
           </figure>
           <figure class="partner">
-            <img class="partner__img" src="assets/ChrisAirplane.png" alt="Bradley">
+            <!-- TODO: this one doesn't have text included -->
+            <img class="partner__img" src="assets/ChrisAirplane.png" alt="Christopher Pierce">
           </figure>
         </div>
         <div class="meet-partner">
@@ -111,9 +117,10 @@
         </div>
       </section>
 
-      <section>
+      <!-- Activities section -->
+      <section class="activities spacing--md">
         <h3 class="section-header">Discover holiday activity</h3>
-        <div class="activities">
+        <div class="activities__grid">
           <div class="activity activity--1 activity--sports">
             <div class="activity__name">Sports and Activities</div>
           </div>
@@ -138,7 +145,8 @@
         </div>
       </section>
 
-      <section class="interests">
+      <!-- Interests section -->
+      <section class="interests spacing--md">
         <h3 class="section-header">Create your holiday activity</h3>
         <form onsubmit="event.preventDefault();" class="interests__form">
           <p>Hi! What are your holiday interests?</p>
@@ -150,6 +158,35 @@
       </section>
     </div>
   </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__col">
+        <h5 class="dreamshare">Dreamshare</h5>
+      </div>
+      <div class="footer__col">
+        <h5 class="footer__header">Company</h5>
+        <nav class="footer__nav">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Terms and Privacy</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__col">
+        <h5 class="footer__header">Partners</h5>
+      </div>
+      <div class="footer__col footer__col--designed">
+        <div class="designed-by">Designed by</div>
+        <img src="assets/Areto.png" alt="Areto development">
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

@@ -2,17 +2,31 @@
   "name": "html-css",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html --no-cache",
-    "build": "parcel build src/index.html"
+    "start": "parcel ./src/index.html --no-cache",
+    "clean": "rm -rf dist/*",
+    "build:parcel": "parcel build ./src/index.html --public-url ./ --no-source-maps",
+    "build": "npm run clean && npm run build:parcel"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-image": "2.0.0-rc.0",
     "@parcel/transformer-sass": "2.0.0-rc.0",
+    "autoprefixer": "^10.3.4",
     "parcel": "^2.0.0-rc.0",
+    "postcss": "^8.1.0",
     "sass": "^1.39.0"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {
+        "overrideBrowserslist": [
+          ">0.2%",
+          "not dead",
+          "not op_mini all"
+        ]
+      }
+    }
   }
 }

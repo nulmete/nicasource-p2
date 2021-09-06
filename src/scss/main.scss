@@ -1,9 +1,10 @@
 @import "base";
-@import "typography";
 @import "utilities";
+@import "animations";
 @import "components/button";
-@import "components/header";
-@import "components/how";
-@import "components/partners";
-@import "components/activities";
-@import "components/interests";
+@import "sections/header";
+@import "sections/steps";
+@import "sections/partners";
+@import "sections/activities";
+@import "sections/interests";
+@import "sections/footer";

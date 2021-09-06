@@ -3,7 +3,7 @@
     margin-top: 1.75rem;
   }
   &--md > * + * {
-    margin-top: 3.5rem;
+    margin-top: 3rem;
   }
   &--lg > * + * {
     margin-top: 7rem;
@@ -17,8 +17,16 @@
   margin: 0 auto;
   max-width: 70vw;
 
-  // 1000px
-  @media screen and (max-width: 62.5em) {
+  // 1024px
+  @media screen and (max-width: $bp-large) {
     max-width: 90vw;
   }
+}
+
+.section-header {
+  color: var(--color-grey-dark-2);
+  font-family: 'Montserrat';
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
 }
